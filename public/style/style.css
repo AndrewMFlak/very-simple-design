@@ -1437,10 +1437,12 @@ th {
     font-weight: 300;
     background-color: #53353D; 
     font-size: 23px;
-
+    vertical-align: middle;
+    
 }
 
 tr {
+    
     font-weight: 100;
     background-color: #DDE9ED;
     
@@ -1448,14 +1450,15 @@ tr {
 
 td,
 th {
+    
     border: 0px solid;
     text-align: left;
     padding: 8px;
-    vertical-align: middle;
+    
 }
 
 tr:nth-child(even) {
-    background-color: #A1B8C0;
+    background-color: #BED9E3;  /* A1B8C0 ABC3CC */
 }
 
 input {
@@ -1474,6 +1477,53 @@ input {
 } 
 
 td:nth-child(2) { width: 12%;}
-
+td:nth-child(2) { width: 12%;}
 /* 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@  End Table Styles @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ##################### Begin Search Bar Styles ##################### */
+
+.search-bar {
+    grid-area: input;
+}
+
+.search{
+    grid-area: search;
+}
+
+td:nth-child(5) { vertical-align: middle;}
+td:nth-child(6) { vertical-align: middle;}
+
+
+.search-form {
+    float: right;
+    display: grid;
+    grid-template-areas: 'input input input search';
+    grid-template-columns: auto;
+    padding: 10px;
+    width: 60%;
+   
+
+}
+
+.search-bar {
+    border: 1px solid #e5e5e5;
+    color: #ccc;
+    padding: 15px;
+    text-align: center;
+    grid-gap: 0px;
+}
+
+#search {
+    float:right;
+    width: 50%;
+    border: 1px solid #e5e5e5;
+    color: white;
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+}
+/*
+button:hover {
+    background-color: lightgray;
+}  */
