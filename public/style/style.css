@@ -1,5 +1,5 @@
 /* Style for index.html video */
-#vid, #vid2{
+#vid, #vid2, #vid3{
     position: absolute;
     top: 50%; 
     left: 50%;
@@ -24,6 +24,22 @@
     width: auto; 
     height: auto;
     z-index: -1000; 
+    overflow: hidden;
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+  } 
+  #vid4{
+    position: absolute;
+    top: 0%; 
+    left: 0%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto;
+    z-index: 100; 
     overflow: hidden;
     transform: rotateY(180deg);
     -webkit-transform:rotateY(180deg); /* Safari and Chrome */
@@ -671,7 +687,7 @@ label {
 
 
 #create-button {
-    width: 100%;
+    width: 83%;
     height: 50px;
     margin-top: 7px;
     margin-bottom: 15px;
@@ -1229,7 +1245,7 @@ padding: 5px;
 Styling Modal Form Elements Starts Here */
  
 input#modal3-input1[type=text] {
-    width: 100%;
+    width: 83%;
     padding: 12px 10px;
     margin: 8px 0;
     display: inline-block;
@@ -1242,7 +1258,7 @@ input#modal3-input1[type=text] {
 }
 
 textarea#tourdescription[type=text] {
-    width: 100%;
+    width: 83%;
     padding: 12px 10px;
     margin: 8px 0;
     height:75px; 
@@ -1256,7 +1272,7 @@ textarea#tourdescription[type=text] {
     
 }
 textarea#specialinstructions[type=text] {
-    width: 100%;
+    width: 83%;
     padding: 12px 10px;
     margin: 8px 0;
     height:75px; 
@@ -1536,10 +1552,17 @@ button:hover {
     background-color: lightgray;
 }  */
 
-.modal-body3 {
+/* .modal-body3 {
     background: url(../images/red-wine.png) no-repeat center center fixed;  
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+} */
+
+.modal-body3 {
+    background: url(../images/red-wine.png) no-repeat;  
+    background-size: cover;
+    background-position: center; 
 }
+

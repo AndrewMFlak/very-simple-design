@@ -2,7 +2,7 @@ $( document ).ready(function() {
     $(document).ready(function () {
         $("#vid").hide();
         $("#vid2").hide();
-        // $("#vid3").hide();
+        $("#vid3").hide();
         $("#nav-items").hide();
       
         $("#nav-customer-div").hide();
@@ -18,7 +18,7 @@ $( document ).ready(function() {
         $( "#nav-customer-div" ).delay( 150 ).fadeIn( 800 );
         $( "#operator-div" ).delay( 200 ).fadeIn( 800 );
 
-        // $( "#vid3" ).delay( 500 ).fadeIn( 1800 );
+        $( "#vid3" ).delay( 1500 ).fadeIn( 1800 );
         $( "#vid" ).delay( 1000 ).fadeIn( 1800 );
         $( "#vid" ).delay( 2100 ).fadeOut( 1800 );
         $( "#vid2" ).delay(2500).fadeIn( 1800 );
