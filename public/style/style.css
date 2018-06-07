@@ -1,5 +1,5 @@
 /* Style for index.html video */
-#vid, #vid2, #vid3{
+#vid, #vid2{
     position: absolute;
     top: 50%; 
     left: 50%;
@@ -1040,7 +1040,7 @@ padding: 5px;
     height: 600px; 
     float: right;
     margin-right: -7px;
-  
+    
 }
 
 #test-div2 {
@@ -1048,7 +1048,7 @@ padding: 5px;
     width: 94.5%;
     height: 250px; 
     margin-left: 20px;
-   
+    
 
     margin-top:20px;
     /*background-color:#EBF7FF;  #FFDFD4*/
@@ -1535,3 +1535,11 @@ td:nth-child(6) { vertical-align: middle;}
 button:hover {
     background-color: lightgray;
 }  */
+
+.modal-body3 {
+    background: url(../images/red-wine.png) no-repeat center center fixed;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
