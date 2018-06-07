@@ -1,14 +1,10 @@
-<<<<<<< HEAD
 <!DOCTYPE html>
-=======
->>>>>>> d3f9118311bacd7a90c507f5361e7cbc250408c6
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< HEAD
     <title>Project Brew - Express Brewery Tours in the Tristate Area</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
@@ -70,24 +66,31 @@
 </div>
 
 <body>
-
+        
         
 
     <div id="operator-welcome-div">
+        <!-- <form class="search-form">
+        <input class="input search-bar" type="search" placeholder="Find. Book. Have Fun!" autocomplete="additional-name">
+        <button id="search" class="search" >Search</button>
+    </form> -->
         <h2 id="welcome-h2" >Welcome back, John Smith!</h2>
         
     </div>
-   
+<!--      
+    <video id="vid4" autoplay loop muted>
+            <source src="video/red-wine.mp4 " type="video/mp4">
+          </video> -->
     <div id="test-div1">
-    
-       
+            
+        
         <div id="test-div2">
             <!-- <div id="top"> -->
                 <!-- <h2>Our Tours</h2>
                 <button id="create-button" class="trigger">+ Create Tour</button>
             </div> -->
             <!-- TABLE -->
-            <table>
+            <table class="effect1">
                 <tr>
                     <th>ID</th>
                     <th>Tour Name</th>
@@ -149,6 +152,22 @@
                         </td>
                     </tr>
 
+                    <tr>
+                        <td>104</td>
+                        <td>The Free Candy Tour</td>
+                        <td>We offer free candy to minors.  Our van is fully stocked with candy.  Did we mention the free candy?</td>
+                        <td>Meet us at the back of our van.  Free candy will be distributed before, during and after our tour.  Will not park outside police departments.</td>
+                        <!-- Modify JS to Append Update Button next to each tour-->
+                        <td>
+                            <button id="update-button">Update</button>
+                        </td>
+        
+                        <!-- Modify JS to Append Delete Button next to each tour-->
+                        <td>
+                            <button id="delete-button">Delete</button>
+                        </td>
+                    </tr>
+
                 </tbody>
             </table>
         
@@ -157,11 +176,15 @@
                 <!-- <a class="btn trigger" href="javascript:;">Click Me!</a> -->
             </div>
             <div class="modal-wrapper">
+
+                
                 <div class="modal">
+                        
                     <div class="head">
                         <a class="btn-close trigger" href="javascript:;"></a>
                     </div>
                     <div class="content">
+                           
         
                         <section class="general-info">
         
@@ -417,7 +440,7 @@
                         <<< Back</p>
                             <p class="modal-status">Step 1 of 4</p>
                             <p class="next-button" id="create-tour-two-of-four">Next >>> </p> -->
-                            <button id="create-button" class="trigger">+ Create Tour</button>
+                            <button id="create-button" class="trigger">Create Tour <img src="images/plus-icon.png" id="plus-icon-modal" alt="plus"> </button>
 
 
 
@@ -623,77 +646,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="script/script.js"></script>
-=======
-    <title>Operator</title>
-    <style>
-        * {
-            border: 1px solid red;
-        }
-
-        div#top {
-            margin-bottom: 20px;
-        }
-
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            width: 100%;
-        }
-
-        td,
-        th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 8px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-    </style>
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</head>
-
-<body>
-    <div id="top">
-        <h2>Our Tours</h2>
-        <button id="add-button">Add Tour</button>
-    </div>
-    <!-- TABLE -->
-    <table>
-        <tr>
-            <th>ID</th>
-            <th>Tour Name</th>
-            <th>Tour Description</th>
-            <th>Tour Instructions</th>
-            <th>
-                <!-- Update Button -->
-            </th>
-            <th>
-                <!-- Delete Button -->
-            </th>
-        </tr>
-        <tbody>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <!-- Modify JS to Append Update Button next to each tour-->
-                <td>
-                    <button id="update-button">Update</button>
-                </td>
-
-                <!-- Modify JS to Append Delete Button next to each tour-->
-                <td>
-                    <button id="delete-button">Delete</button>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-    
->>>>>>> d3f9118311bacd7a90c507f5361e7cbc250408c6
 </body>
 
 </html>

@@ -29,6 +29,22 @@
     -webkit-transform:rotateY(180deg); /* Safari and Chrome */
     -moz-transform:rotateY(180deg); /* Firefox */
   } 
+  #vid4{
+    position: absolute;
+    top: 0%; 
+    left: 0%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto;
+    z-index: 100; 
+    overflow: hidden;
+    transform: rotateY(180deg);
+    -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+    -moz-transform:rotateY(180deg); /* Firefox */
+  } 
   
 
 
@@ -671,7 +687,7 @@ label {
 
 
 #create-button {
-    width: 100%;
+    width: 83%;
     height: 50px;
     margin-top: 7px;
     margin-bottom: 15px;
@@ -681,7 +697,7 @@ label {
     border-radius: 3px;
     font-family: Heebo, sans-serif;
     font-size: 32px;
-    font-weight:300;
+    font-weight:100;
     
 }
 
@@ -976,6 +992,14 @@ padding: 5px;
     float: left;
 }
 
+#plus-icon-modal {
+    height: 21px;
+    cursor: pointer;
+    padding-top: 13.5px;
+    margin-left: 0px;
+   
+}
+
 #plane-icon {
     height: 22px;
     cursor: pointer;
@@ -1032,7 +1056,7 @@ padding: 5px;
     height: 600px; 
     float: right;
     margin-right: -7px;
-  
+    
 }
 
 #test-div2 {
@@ -1040,7 +1064,7 @@ padding: 5px;
     width: 94.5%;
     height: 250px; 
     margin-left: 20px;
-   
+    
 
     margin-top:20px;
     /*background-color:#EBF7FF;  #FFDFD4*/
@@ -1221,7 +1245,7 @@ padding: 5px;
 Styling Modal Form Elements Starts Here */
  
 input#modal3-input1[type=text] {
-    width: 100%;
+    width: 83%;
     padding: 12px 10px;
     margin: 8px 0;
     display: inline-block;
@@ -1234,7 +1258,7 @@ input#modal3-input1[type=text] {
 }
 
 textarea#tourdescription[type=text] {
-    width: 100%;
+    width: 83%;
     padding: 12px 10px;
     margin: 8px 0;
     height:75px; 
@@ -1248,7 +1272,7 @@ textarea#tourdescription[type=text] {
     
 }
 textarea#specialinstructions[type=text] {
-    width: 100%;
+    width: 83%;
     padding: 12px 10px;
     margin: 8px 0;
     height:75px; 
@@ -1437,10 +1461,12 @@ th {
     font-weight: 300;
     background-color: #53353D; 
     font-size: 23px;
-
+    vertical-align: middle;
+    
 }
 
 tr {
+    
     font-weight: 100;
     background-color: #DDE9ED;
     
@@ -1448,14 +1474,15 @@ tr {
 
 td,
 th {
+    
     border: 0px solid;
     text-align: left;
     padding: 8px;
-    vertical-align: middle;
+    
 }
 
 tr:nth-child(even) {
-    background-color: #A1B8C0;
+    background-color: #BED9E3;  /* A1B8C0 ABC3CC */
 }
 
 input {
@@ -1474,6 +1501,68 @@ input {
 } 
 
 td:nth-child(2) { width: 12%;}
-
+td:nth-child(2) { width: 12%;}
 /* 
 @@@@@@@@@@@@@@@@@@@@@@@@@@@  End Table Styles @@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+/* ##################### Begin Search Bar Styles ##################### */
+
+.search-bar {
+    grid-area: input;
+}
+
+.search{
+    grid-area: search;
+}
+
+td:nth-child(5) { vertical-align: middle;}
+td:nth-child(6) { vertical-align: middle;}
+
+
+.search-form {
+    float: right;
+    display: grid;
+    grid-template-areas: 'input input input search';
+    grid-template-columns: auto;
+    padding: 10px;
+    width: 60%;
+   
+
+}
+
+.search-bar {
+    border: 1px solid #e5e5e5;
+    color: #ccc;
+    padding: 15px;
+    text-align: center;
+    grid-gap: 0px;
+}
+
+#search {
+    float:right;
+    width: 50%;
+    border: 1px solid #e5e5e5;
+    color: white;
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+}
+/*
+button:hover {
+    background-color: lightgray;
+}  */
+
+/* .modal-body3 {
+    background: url(../images/red-wine.png) no-repeat center center fixed;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+} */
+
+.modal-body3 {
+    background: url(../images/red-wine.png) no-repeat;  
+    background-size: cover;
+    background-position: center; 
+}
+
