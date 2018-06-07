@@ -681,7 +681,7 @@ label {
     border-radius: 3px;
     font-family: Heebo, sans-serif;
     font-size: 32px;
-    font-weight:300;
+    font-weight:100;
     
 }
 
@@ -974,6 +974,14 @@ padding: 5px;
     padding-top: 13.5px;
     margin-left:-4px;
     float: left;
+}
+
+#plus-icon-modal {
+    height: 21px;
+    cursor: pointer;
+    padding-top: 13.5px;
+    margin-left: 0px;
+   
 }
 
 #plane-icon {
