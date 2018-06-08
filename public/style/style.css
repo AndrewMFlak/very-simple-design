@@ -1000,16 +1000,25 @@ padding: 5px;
    
 }
 
-#plane-icon {
+/* #plane-icon {
     height: 22px;
     cursor: pointer;
     
     position:relative;
     top: -37px;
-    right: 95px;
+    right: 85px;
     float: right;
 
+} */
+
+#plane-icon {
+    height: 22px;
+    cursor: pointer;
+    
+   
+
 }
+
 
 #create-a-tour-p {
     /* color: #3C3B41; */
@@ -1566,3 +1575,49 @@ button:hover {
     background-position: center; 
 }
 
+
+/* 
+^^^^^^^^^^^^^^^^^^^^^^^ Begin Media Queries ^^^^^^^^^^^^^^^^^^^^^^^ */
+
+@media screen and (max-width: 1000px) {
+    #plane-icon {
+        display: none;
+       
+   
+        
+       
+    
+    }
+}
+
+@media screen and (max-width: 895px) {
+    #plus-icon {
+        display: none;
+        
+        
+    }
+}
+
+@media screen and (max-width: 859px) {
+    #plus-icon {
+        display: none;
+        
+        
+    }
+}
+
+
+@media screen and (max-width: 859px) {
+    #tour-operator-dashboard-h3, #create-a-tour-p {
+        font-size:14px;
+        
+        
+    }
+}
+
+
+
+
+
+/* 
+^^^^^^^^^^^^^^^^^^^^^^^ End Media Queries ^^^^^^^^^^^^^^^^^^^^^^^ */
